@@ -20,7 +20,7 @@ html {
 	bottom: -497px;
 	right: 45px; 
 	text-width: 100px;
-	text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+	text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
 	font-size: 16px; 
 
 	transform: perspective( 90px) rotateY( -35deg) rotateX(-37deg) rotateZ(2.4deg);;
@@ -34,7 +34,7 @@ html {
 	text-align: center;
 	bottom: -459.5px;
 	right: -20px;  
-	text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+	text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
 	font-size: 16px; 
 
 	transform: perspective(75px) rotateY(35deg) rotateX(-30deg) rotateZ(-5deg); 
@@ -552,7 +552,7 @@ html {
   color: white;
   bottom: 149px;
   right: 295px;
-  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
   padding-left: 1em;
@@ -562,7 +562,7 @@ html {
 #snail {
   background-image: url(tablet.png);
   background-repeat: no-repeat;
-  background-color: rgba(89, 169, 187);
+  background-color: rgba(89, 169, 187, 1);
   border-radius: 10px;
   background-size: 152.5%;
   background-position: 46.5%; 
@@ -576,7 +576,7 @@ html {
   color: white;
   bottom: 149px;
   right: 295px;
-  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
   padding-left: 1em;
@@ -586,7 +586,7 @@ html {
 #giftdr {
   background-image: url(tablet.png);
   background-repeat: no-repeat;
-  background-color: rgba(89, 169, 187);
+  background-color: rgba(89, 169, 187, 1);
   border-radius: 10px;
   background-size: 152.5%;
   background-position: 46.5%; 
@@ -600,7 +600,7 @@ html {
   color: white;
   bottom: 149px;
   right: 295px;
-  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
   padding-left: 1em;
@@ -610,7 +610,7 @@ html {
 #homepage {
   background-image: url(tablet.png);
   background-repeat: no-repeat;
-  background-color: rgba(89, 169, 187);
+  background-color: rgba(89, 169, 187, 1);
   border-radius: 10px;
   background-size: 152.5%;
   background-position: 46.5%; 
@@ -624,7 +624,7 @@ html {
   color: white;
   bottom: 149px;
   right: 295px;
-  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
   padding-left: 1em;
@@ -634,7 +634,7 @@ html {
 #tetris {
   background-image: url(tablet.png);
   background-repeat: no-repeat;
-  background-color: rgba(89, 169, 187);
+  background-color: rgba(89, 169, 187, 1);
   border-radius: 10px;
   background-size: 152.5%;
   background-position: 46.5%; 
@@ -648,7 +648,7 @@ html {
   color: white;
   bottom: 149px;
   right: 295px;
-  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
   padding-left: 1em;
@@ -658,7 +658,7 @@ html {
 #rosie {
   background-image: url(tablet.png);
   background-repeat: no-repeat;
-  background-color: rgba(89, 169, 187);
+  background-color: rgba(89, 169, 187, 1);
   border-radius: 10px;
   background-size: 152.5%;
   background-position: 46.5%; 
@@ -672,7 +672,7 @@ html {
   color: white;
   bottom: 149px;
   right: 295px;
-  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
   padding-left: 1em;
@@ -682,7 +682,7 @@ html {
 #nbost {
  background-image: url(tablet.png);
   background-repeat: no-repeat;
-  background-color: rgba(89, 169, 187);
+  background-color: rgba(89, 169, 187, 1);
   border-radius: 10px;
   background-size: 152.5%;
   background-position: 46.5%; 
@@ -696,7 +696,7 @@ html {
   color: white;
   bottom: 149px;
   right: 295px;
-  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
   padding-left: 1em;

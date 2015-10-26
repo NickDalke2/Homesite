@@ -538,7 +538,7 @@ html {
 #about {
   background-image: url(tablet.png);
   background-repeat: no-repeat;
-  background-color: rgba(89, 169, 187);
+  background-color: rgba(89, 169, 187, 1);
   border-radius: 10px;
   background-size: 152.5%;
   background-position: 46.5%; 

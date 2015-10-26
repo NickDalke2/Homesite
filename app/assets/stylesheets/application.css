@@ -1,0 +1,723 @@
+
+html { 
+	background: url(white.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+
+	-o-background-size: cover;  
+	background-size: cover;
+	/*background-size: cover; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;*/
+}
+
+.pone {
+	font-family: "Midjungards";
+	src: url("../fonts/Midjungards.ttf");
+	color: #DAA520; 
+	position: relative;
+	text-align: center;
+	bottom: -497px;
+	right: 45px; 
+	text-width: 100px;
+	text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+	font-size: 16px; 
+
+	transform: perspective( 90px) rotateY( -35deg) rotateX(-37deg) rotateZ(2.4deg);;
+}
+
+.ptwo {
+	font-family: "Midjungards";
+	src: url("../fonts/Midjungards.ttf");
+	color: #DAA520; 
+	position: relative;
+	text-align: center;
+	bottom: -459.5px;
+	right: -20px;  
+	text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+	font-size: 16px; 
+
+	transform: perspective(75px) rotateY(35deg) rotateX(-30deg) rotateZ(-5deg); 
+} 
+
+
+#universe {
+  z-index: 1;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*  @media screen and (max-width: 299px) {
+  #universe {
+    font-size: 20%; } }
+@media screen and (min-width: 300px) {
+  #universe {
+    font-size: 24%; } }
+@media screen and (min-width: 500px) {
+  #universe {
+    font-size: 36%; } }
+@media screen and (min-width: 600px) {
+  #universe {
+    font-size: 44%; } }
+@media screen and (min-width: 760px) {
+  #universe {
+    font-size: 58%; } }
+@media screen and (min-width: 1000px) {
+  #universe {
+    font-size: 73%; }
+
+@media screen and (min-width: 1300px) {
+  #universe {
+    font-size: 100%; } }
+*/
+#galaxy {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 35px;
+  left: -20px;
+  perspective: 4000; }
+
+#sun, .icon{
+  transition-property: width, height, webkit-transform; }
+
+#solar-system {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; }
+
+/*#solar-system, .orbit,
+.planet,
+.satelite,
+.ring {
+  transition-property: width, height, top, left, margin-left, margin-top, webkit-transform; }*/
+
+#solar-system,
+#sun,
+.orbit,
+.pos,
+.planet,
+.satelite,
+.ring,
+.infos,
+.icon {
+  transition-duration: .8s;
+  transition-timing-function: ease-in-out; }
+
+#solar-system,
+#sun,
+.planet,
+.satelite,
+.ring {
+  transition-delay: 0s; } 
+
+.pos {
+  transition-delay: 1s; }
+
+.opening #solar-system,
+.opening #sun,
+.opening .orbit,
+.opening .pos,
+.opening .planet,
+.opening .satelite,
+.opening .ring,
+.opening .infos,
+.opening h1,
+.opening #data,
+.opening dl.infos,
+.opening #controls {
+  transition-duration: 0s;
+  transition-delay: 0s; } 
+
+.opening .pos {
+  transition-delay: 0s; } 
+
+/*#mercury {
+  z-index: 10; } 
+#venus {
+  z-index: 9; }*/
+#earth {
+  z-index: 8; }
+
+/*#mercury .pos {
+  left: 50%;
+  top: -1%; }*/
+
+#sun {
+	z-index: 1;
+}
+
+
+
+.view-3D #solar-system {
+  transform: rotateX(79deg); }
+
+#venus .pos,
+#venus .planet,
+#venus.orbit {
+  animation-duration: 7.38237s; }
+
+#mars .pos,
+#mars .planet,
+#mars.orbit {
+  margin-top: -1.5em;
+  animation-duration: 22.57017s; }
+
+#jupiter .pos,
+#jupiter .planet,
+#jupiter.orbit {
+  margin-top: -1.5em;
+  animation-duration: 142.35138s; }
+
+
+#saturn .pos,
+#saturn .planet,
+#saturn.orbit {
+  margin-top: -1.5em;
+  animation-duration: 353.36998s; }
+
+
+#earth .pos,
+#earth .planet,
+#earth.orbit {
+  animation-duration: 12.00021s; }
+
+#earth .orbit .pos,
+#earth .orbit {
+  animation-duration: 0.89764s; }
+
+#earth .pos {
+  left: 100%;
+  top: 50%; }
+
+#earth .orbit .pos {
+  left: 100%;
+  top: 50%; }
+
+#venus .pos {
+  left: 0%;
+  top: 50%; }
+
+#saturn .pos {
+  left: 50%;
+  top: 0%; } 
+
+#jupiter .pos {
+  left: 70%;
+  top: 0%; } 
+
+.corona #corona .infos,
+.sun #sun .infos,
+.mercury #mercury .infos,
+.venus #venus .infos,
+.earth #earth .infos,
+.mars #mars .infos,
+.jupiter #jupiter .infos,
+.saturn #saturn .infos,
+.uranus #uranus .infos,
+.neptune #neptune .infos {
+  display: block;
+  opacity: 1;
+  transform: rotateX(0deg); }
+
+.mercury #mercury.orbit,
+.venus #venus.orbit,
+.earth #earth.orbit,
+.mars #mars.orbit,
+.jupiter #jupiter.orbit,
+.saturn #saturn.orbit,
+.uranus #uranus.orbit,
+.neptune #neptune.orbit { 
+  border: 7px dashed rgba(255, 255, 255, 0.8); 
+  }
+
+#earth .planet {
+  background-image: url(orange.png) ;
+  background-size: 290px;
+  background-position: 50% 50%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  animation-name: rotate;
+}
+
+#mars .planet {
+  background-image: url(blue.png);
+  background-size: 200px;
+  background-position: 3% 50%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  animation-name: spin;
+}
+
+#jupiter .planet {
+  /*background-image: url(blue.png);*/
+  background-size: 420px;
+  background-position: 47.9% 57%;
+  opacity: 1;
+  background-color:rgba(0,0,0,1); 
+  background-repeat: no-repeat;
+  animation-name: spin;
+}
+
+#saturn .planet {
+  background-image: url(nbost.jpeg);
+  background-size: 124px;
+  background-position: 50% 50%;
+  opacity: 1;
+  background-color:rgba(0,0,0,1); 
+  background-repeat: no-repeat;
+}
+
+#mercury .planet {
+  background-image: url(gold.png);
+  background-size: 30.4px;
+  background-position: 49% 9%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-color: 255,0,0,0.4;
+/*  animation-name: spin;*/
+}
+
+#venus .planet {
+  background-image: url(pink.png);
+  background-size: 290px;
+  background-position: 95.3% 32%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-color: 255,0,0,0.4;
+/*  animation-name: spin;*/
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-1080deg);
+  }
+  animation-duration: 4s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
+  }
+  animation-duration: 4s;
+}
+
+.planet, #earth .moon {  
+  position: relative;
+  top: 50%;
+  left: 50%; 
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  border-radius: 50%;
+  transform-style: preserve-3d; } 
+
+#sun {  
+  position: relative;
+  top: 50%;
+  left: 50%; 
+  width: 1em;
+  height: 1em;
+  z-index: 1;
+  margin-top: -2.05em;
+  margin-left: -.68em;
+  border-radius: 50%;
+  transform-style: preserve-3d; 
+  box-shadow: 0 0 90px rgba(255, 160, 60, 0.4); } 
+
+.view-3D #sun {
+  transform: rotateX(-90deg); }
+
+#sun, #corona {
+  background-image: url(ss.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1; }
+
+ #corona { 
+  top: 50%;
+  left: 50%; 
+  width: .294em;
+  height: 0.284em;
+  z-index: -1;
+  margin-top: -.55em;
+  margin-left: 0.7792em;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transform: rotateX(100deg);
+  box-shadow: 0 0 90px rgba(255, 160, 60, 0.4); }
+
+.pos {
+  position: absolute; 
+  top: 50%;
+  width: 2em;
+  height: 2em;
+  margin-top: -1em;
+  margin-left: -1em;
+  transform-style: preserve-3d;
+  animation-name: invert;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.view-3D .opening #sun,
+.view-3D .opening .orbit,
+.view-3D .opening .pos,
+.view-3D .opening .planet,
+.view-3D .opening .satelite,
+.view-3D .opening .ring {
+  transition-duration: 4s; }
+
+.orbit {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  border: 0px solid rgba(255, 255, 255, 0.2);   
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  animation-name: orbit;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; /*
+  border: 7px dashed rgba(255, 0, 255, 0.8);*/}
+
+.orbit .orbit {
+  animation-name: suborbit; }
+
+.planet {
+  margin-top: -90px;
+  background-color: #202020;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+/*#universe.opening #sun {
+  box-shadow: 0 0 0 rgba(255, 160, 60, 0); }*/
+
+#earth .pos,
+#earth .planet,
+#earth.orbit {/*
+  margin-top: .1em;*/
+  animation-duration: 12.00021s; }
+
+/*#earth .orbit .pos,
+#earth .orbit {
+  animation-duration: 0.89764s; } */
+
+#mercury .pos,
+#mercury .planet,
+#mercury.orbit {
+  margin-top: -1.5em;
+  animation-duration: 2.89016s; }
+
+.pos {
+  transition-property: top, left; }
+
+@keyframes orbit {
+  0% {
+    transform: rotateZ(0deg); }
+
+  100% {
+    transform: rotateZ(-360deg); } }
+
+@keyframes suborbit {
+  0% {
+    transform: rotateX(90deg) rotateZ(0deg); }
+
+  100% {
+    transform: rotateX(90deg) rotateZ(-360deg); } }
+
+@keyframes invert {
+  0% {
+    transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg); }
+
+  100% {
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); } }
+ 
+
+
+.scale-stretched #sun {
+  font-size: 12em; }
+
+.scale-stretched #corona {
+	font-size: 42em;
+}
+
+.scale-stretched #mercury .planet {
+  font-size: 1.5em; }
+
+.scale-stretched #venus .planet {
+  font-size: 3.72em; }
+
+.scale-stretched #earth .planet {
+  font-size: 3.92em; }
+
+.scale-stretched #earth .moon {
+  font-size: 1.2em; }
+
+.scale-stretched #mars .planet {
+  font-size: 2.9em; }
+
+.scale-stretched #jupiter .planet {
+  font-size: 12em; }
+
+.scale-stretched #saturn .planet {
+  font-size: 10.8em; }
+
+.scale-stretched #uranus .planet {
+  font-size: 4.68em; }
+
+.scale-stretched #neptune .planet {
+  font-size: 4.9em; } 
+
+.scale-stretched #mercury.orbit {
+  width: 32em;
+  height: 32em;
+  margin-top: -16em;
+  margin-left: -16em; }
+
+.scale-stretched #venus.orbit { 
+  width: 40em;
+  height: 40em;
+  margin-top: -20em;
+  margin-left: -20em; }
+
+.scale-stretched #earth.orbit {
+  width: 56em;
+  height: 56em;
+  margin-top: -28em;
+  margin-left: -28em; }
+
+.scale-stretched #earth .orbit {
+  width: 6em;
+  height: 6em;
+  margin-top: -3em;
+  margin-left: -3em; }
+
+.scale-stretched #mars.orbit {
+  width: 72em;
+  height: 72em;
+  margin-top: -36em;
+  margin-left: -36em; }
+
+.scale-stretched #jupiter.orbit {
+  width: 100em;
+  height: 100em;
+  margin-top: -50em;
+  margin-left: -50em; }
+
+.scale-stretched #saturn.orbit {
+  width: 150em;
+  height: 150em;
+  margin-top: -75em;
+  margin-left: -75em; }
+
+.scale-stretched #uranus.orbit {
+  width: 186em;
+  height: 186em;
+  margin-top: -93em; 
+  margin-left: -93em; }
+
+.scale-stretched #neptune.orbit {
+  width: 210em;
+  height: 210em;
+  margin-top: -105em;
+  margin-left: -105em; } 
+
+#about {
+  background-image: url(tablet.png);
+  background-repeat: no-repeat;
+  background-color: rgba(89, 169, 187);
+  border-radius: 10px;
+  background-size: 152.5%;
+  background-position: 46.5%; 
+  opacity: .91;
+  z-index: 11;
+  position: absolute;
+  overflow: hidden;
+  width: 450px;
+  height: 287px;
+  box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
+  color: white;
+  bottom: 149px;
+  right: 295px;
+  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  font-size: 16px; 
+  text-indent: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#snail {
+  background-image: url(tablet.png);
+  background-repeat: no-repeat;
+  background-color: rgba(89, 169, 187);
+  border-radius: 10px;
+  background-size: 152.5%;
+  background-position: 46.5%; 
+  opacity: .91;
+  z-index: 11;
+  position: absolute;
+  overflow: hidden;
+  width: 450px;
+  height: 287px;
+  box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
+  color: white;
+  bottom: 149px;
+  right: 295px;
+  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  font-size: 16px; 
+  text-indent: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#giftdr {
+  background-image: url(tablet.png);
+  background-repeat: no-repeat;
+  background-color: rgba(89, 169, 187);
+  border-radius: 10px;
+  background-size: 152.5%;
+  background-position: 46.5%; 
+  opacity: .91;
+  z-index: 11;
+  position: absolute;
+  overflow: hidden;
+  width: 450px;
+  height: 287px;
+  box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
+  color: white;
+  bottom: 149px;
+  right: 295px;
+  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  font-size: 16px; 
+  text-indent: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#homepage {
+  background-image: url(tablet.png);
+  background-repeat: no-repeat;
+  background-color: rgba(89, 169, 187);
+  border-radius: 10px;
+  background-size: 152.5%;
+  background-position: 46.5%; 
+  opacity: .91;
+  z-index: 11;
+  position: absolute;
+  overflow: hidden;
+  width: 450px;
+  height: 287px;
+  box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
+  color: white;
+  bottom: 149px;
+  right: 295px;
+  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  font-size: 16px; 
+  text-indent: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#tetris {
+  background-image: url(tablet.png);
+  background-repeat: no-repeat;
+  background-color: rgba(89, 169, 187);
+  border-radius: 10px;
+  background-size: 152.5%;
+  background-position: 46.5%; 
+  opacity: .91;
+  z-index: 11;
+  position: absolute;
+  overflow: hidden;
+  width: 450px;
+  height: 287px;
+  box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
+  color: white;
+  bottom: 149px;
+  right: 295px;
+  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  font-size: 16px; 
+  text-indent: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
+} 
+
+#rosie {
+  background-image: url(tablet.png);
+  background-repeat: no-repeat;
+  background-color: rgba(89, 169, 187);
+  border-radius: 10px;
+  background-size: 152.5%;
+  background-position: 46.5%; 
+  opacity: .91;
+  z-index: 11;
+  position: absolute;
+  overflow: hidden;
+  width: 450px;
+  height: 287px;
+  box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
+  color: white;
+  bottom: 149px;
+  right: 295px;
+  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  font-size: 16px; 
+  text-indent: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#nbost {
+ background-image: url(tablet.png);
+  background-repeat: no-repeat;
+  background-color: rgba(89, 169, 187);
+  border-radius: 10px;
+  background-size: 152.5%;
+  background-position: 46.5%; 
+  opacity: .91;
+  z-index: 11;
+  position: absolute;
+  overflow: hidden;
+  width: 450px;
+  height: 287px;
+  box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
+  color: white;
+  bottom: 149px;
+  right: 295px;
+  text-shadow: 0px 1px 0px rgba(000,000,000,.5); 
+  font-size: 16px; 
+  text-indent: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+div h1 {
+  font-family: "Hobbiton";
+  src: url("../fonts/Hobbiton.ttf");
+  color: #DAA520; 
+}
+
+a {
+ /* text-decoration: none;
+  font-family: "Hobbiton";
+  src: url("../fonts/Hobbiton.ttf");
+  color: #DAA520; 
+  font-size: 24px;*/
+}
+
+
+
+
+

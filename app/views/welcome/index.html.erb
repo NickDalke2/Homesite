@@ -3,7 +3,7 @@
  <head>
  	<title></title>
  	<script type="text/javascript" src="jquery.js"></script>
- 	<script type="text/javascript"> 
+ 	<script type="text/javascript"> 	
  	function toggle(id) {
  		if ($('#'+id).is(":hidden")) {
  			$('#'+id).slideDown("fast");
@@ -45,17 +45,17 @@
 	<div id="data">
 		<a class="sun" title="sun" href="#sunspeed" rel="about" onclick="toggle('about'); return false;">About Me</a>
 
-		<a class="mercury" title="mercury" href="#mercuryspeed" rel="snail" onclick="toggle('snail'); return false;">Snailtalk</a>
+		<a class="mercury" title="mercury" href="#mercuryspeed" rel="snail" onclick="toggle('snail'); return false;">Slings</a>
 
 		<a class="venus" title="venus" href="#venusspeed" rel = "giftdr" onclick="toggle('giftdr'); return false, close('giftdr');">Giftdr</a>
 
-		<a class="earth" title="earth" href="#earthspeed" rel="homepage" onclick="toggle('homepage'); return false, close('homepage');">Homepage</a>
+		<a class="earth" title="earth" href="#earthspeed" rel="homepage" onclick="toggle('homepage'); return false, close('homepage');">Portfolio</a>
 
 		<a class="mars" title="mars" href="#marsspeed" rel="tetris" onclick="toggle('tetris'); return false;">Tetris</a>
 
 		<a class="jupiter" title="jupiter" href="#jupiterspeed" rel="rosie" onclick="toggle('rosie'); return false;">Rosie</a>
 
-		<a class="saturn" title="saturn" href="#saturnspeed" rel="nbost" onclick="vanish('saturn'); return false, toggle('nbost'); return false;">NBOST</a> 
+		<a class="saturn" title="saturn" href="#saturnspeed" rel="nbost" onclick="vanish('saturn'); return false, toggle('nbost'); return false;">Storefront</a> 
 
 	</div>
 
@@ -64,27 +64,27 @@
 		<div id="about" style="display: none; overflow: auto">
 			<h1 style= "text-align: center"> Nicholas Dalke </h1>
 	 			<h4> Swift, Ruby on Rails, HTML, CSS, Javascript, JQuery </h4>
-	 				<p> A web && mobile developer with both hard and soft science backgrounds and years of experience doing things on my own; I am a tenacious individual with a penchant for taking the non-traditional path. I take risks, I think big and I don't always get results. But when I do they're results worth getting.
+	 				<p> A web & mobile developer with both hard and soft science backgrounds and years of experience doing things on my own; I am a tenacious individual with a penchant for taking the non-traditional path. I take risks, I think big and I don't always get results. But when I do they're results worth getting. Follow the links below to learn more about me. 
 	 				</p>
-	 				<p>
-	 				Linkedin: <a href="https://www.linkedin.com/nhome/?trk="> https://www.linkedin.com/nhome/?trk= </a>
-	 				<br> General Assembly Page: <a href="https://profiles.generalassemb.ly/profiles/nick-dalke"> https://profiles.generalassemb.ly/profiles/nick-dalke </a>
-	 				</p>
+	 				Linkedin: <a href="https://www.linkedin.com/nhome/?trk="> My LinkedIn Profile </a>
+	 				<br> General Assembly Page: <a href="https://profiles.generalassemb.ly/profiles/nick-dalke"> My General Assembly Profile </a>
+	 				<br> Github: <a href="https://github.com/NickDalke2"> My Public Github Account </a> 
+	 			
 		</div>
 
 		<div id="snail" style="display: none; overflow: auto">
-			<h1 style= "text-align: center"> Snailtalk </h1>
-	 				<p> I built this for a friend who likes to tell jokes. His signature joke is "What did the Snail say when it found out it could talk?" You say "what", and then he just insults you as accurately as he can as long as he can until you catch on. It has absolutely no marketability and was just for fun.
+			<h1 style= "text-align: center"> Slings </h1>
+	 				<p> "Slings" is a fully functional e-commerce site built in Spree and Ruby on Rails, with Ruby and JavaScript on the frontend. The site has full cart functionality, user login, order tracking, and administrative capabilities. Slings has not yet been deployed by the business it was built for (I'm told due to lack of inventory), however the code for the project can be seen, downloaded, and then run from my Github: <a href="https://github.com/NickDalke2"> https://github.com/NickDalke2 </a> 
 	 				</p>
-	 				<h4> Swift - no link because it's on my phone, so ask me to see it! </h4>
+	 				<h4> Built with: Spree, Ruby on Rails, JavaScript, CSS, HTML </h4>
 		</div>
 
-		<div id="giftdr" style="display: none; overflow: auto">
+		<div id="giftdr" style="display: none; overflow: auto"> 
 			<h1 style= "text-align: center"> Giftdr </h1>
 			 		<p> Giftdr is a birthday reminder app that uses the user's input about their friends to suggest gifts for them around birthdays and other holidays. It connects to the Amazon API to make their shopping easier and alerts them at two, and then again one, week(s) out from the special day
 			 		</p>
 			 		<p> Visit Giftdr! <a href="http://giftdr.herokuapp.com/"> http://giftdr.herokuapp.com/ </a>
-			 		<h4> Ruby on Rails, CSS, HTML </h4>
+			 		<h4> Built with: Ruby on Rails, CSS, HTML </h4>
 		</div>
 
 		<div id="homepage" style="display: none; overflow: auto">
@@ -93,27 +93,28 @@
 	 		</p>
 	 		<p> In addition to the six projects listed here, I built a seventh, an Ruby on Rails ecommerce platform, for a company called "Slings" but they haven't deployed it yet because of inventory shortages. As soon as they do, a new planet will be born! 
 	 		</p>
-	 		<h4> CSS, HTML, JQuery </h4>
+	 		<h4> Built with: CSS, HTML, JQuery </h4>
 		</div>
 
 		<div id="tetris" style="display: none; overflow: auto">
 			<h1 style= "text-align: center"> Tetris </h1>
 			 		<p> The time-honored classic, I built my own version of it as practice with the Swift game layer, user the column/row grid layout and swipe events to control the orientation of the blocks. 
 			 		</p>
-			 		<h4> Swift - no link, but play it on my phone!</h4>
+			 		<h4> Built with: Swift - no link, but play it on my phone!</h4>
 		</div>
 
 		<div id="rosie" style="display: none; overflow: auto">
 			<h1 style= "text-align: center"> Rosie </h1>
 			 		<p>	Rosie is a native Swift based iPhone app and soon to be the world's most advanced baby monitor. I designed it to reduce the incidence of SIDS (sudden infant death syndrome), a condition where babies stop breathing in their sleep. Having only had a week to learn Swift, I built Rosie to utilize a pre-fabricated motion processing system. The next version will utilize a sophisticated Eulerian based image processing algorithm to detect changes in motion invisible to the human eye, then trigger an alarm when motions associated with breathing cease. The goal being to wake the baby up and have them resume breathing on their own. My main obstacles to completing Rosie were two-fold. First there was the fact that literally no one else at GA (instructors included) knows Swift. I was completely and utterly on my own. I did find out that there's a mobile class that comes in at night so I was able to ask one question of that instructor, but other than that I used online resources all the way. Second, Swift is so ridiculously new that there is only a single motion detection API that I could find to incorporate into Rosie, and it's not sensitive enough to do what I need. I have found something that is, but I need to learn MatLab so I can translate it from MatLab to Swift. Challenge accepted!
 			 		</p>
-			 		<h4> Swift - coming soon(ish) to an app store in your pocket!</h4>
+			 		<h4> Built with: Swift - coming soon(ish) to an app store in your pocket!</h4>
 		</div> 
 	
 		<div id="nbost" style="display: none; overflow: auto"> 
-		<h1 style= "text-align: center"> NBOST </h1>
-	 		<p>Top Secret!</p>
-	 		<h4> Swift </h4>
+		<h1 style= "text-align: center"> JavaScript Storefront </h1>
+	 		<p> Storefront, aka "Dinos" is an exercise in front-end management using AJAX (Asynchronous JavaScript and XML) to utilize server pings and responses to refresh variables on the page in real time without reloading the page. This is one of the most in demand functions of modern websites and is a must for clean, efficient UX and greatly enhances the appeal of any web or mobile application. As a heads up, Storefront was built to demonstrate my knowledge of AJAX to a company whose business is medical marijuana delivery, so I stuck with the theme.
+	 		<p> Visit Dinos! <a href="https://quiet-island-26346.herokuapp.com"> https://quiet-island-26346.herokuapp.com </a> </p>
+	 		<h4> Built with: JavaScript/AJAX </h4>
 
 		</div>
 	</div>

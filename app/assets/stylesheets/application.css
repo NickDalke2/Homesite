@@ -264,8 +264,8 @@ html {
   animation-name: spin;
 }
 
-#saturn .planet {
-  background-image: url(nbost.jpeg);
+#saturn .planet {/*
+  background-image: url(nbost.jpeg);*/
   background-size: 124px;
   background-position: 50% 50%;
   opacity: 1;
@@ -293,7 +293,7 @@ html {
 /*  animation-name: spin;*/
 }
 
-@keyframes rotate {
+/*@keyframes rotate {
   from {
     transform: rotate(0deg);
   }
@@ -311,7 +311,7 @@ html {
     transform: rotate(1080deg);
   }
   animation-duration: 4s;
-}
+}*/
 
 .planet, #earth .moon {  
   position: relative;
@@ -550,8 +550,8 @@ html {
   height: 287px;
   box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
   color: white;
-  bottom: 149px;
-  right: 295px;
+  bottom: 30%;
+  right: 35%;
   text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
@@ -574,8 +574,8 @@ html {
   height: 287px;
   box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
   color: white;
-  bottom: 149px;
-  right: 295px;
+  bottom: 30%;
+  right: 35%;
   text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
@@ -598,8 +598,8 @@ html {
   height: 287px;
   box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
   color: white;
-  bottom: 149px;
-  right: 295px;
+  bottom: 30%;
+  right: 35%;
   text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
@@ -622,8 +622,8 @@ html {
   height: 287px;
   box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
   color: white;
-  bottom: 149px;
-  right: 295px;
+  bottom: 30%;
+  right: 35%;
   text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
@@ -646,8 +646,8 @@ html {
   height: 287px;
   box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
   color: white;
-  bottom: 149px;
-  right: 295px;
+  bottom: 30%;
+  right: 35%;
   text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
@@ -670,8 +670,8 @@ html {
   height: 287px;
   box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
   color: white;
-  bottom: 149px;
-  right: 295px;
+  bottom: 30%;
+  right: 35%;
   text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
@@ -694,8 +694,8 @@ html {
   height: 287px;
   box-shadow: 0 0 11px 5px rgba(89, 169, 187, 0.75);
   color: white;
-  bottom: 149px;
-  right: 295px;
+  bottom: 30%;
+  right: 35%;
   text-shadow: 0px 1px 0px rgba(000,000,000, 0.5); 
   font-size: 16px; 
   text-indent: 15px;
